@@ -9,6 +9,9 @@ const Nav = () => {
       <h1 className="name"> Sista Ramachandra Murthy</h1>
       <ul className="linkStyle">
         <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
           <Link to="/about">About</Link>
         </li>
         <li>
