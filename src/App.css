@@ -146,12 +146,13 @@
   }
   .linkStyle {
     margin-bottom: 10px;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 22px;
   }
   /* .image-style {
   } */
   .image-style {
-    margin-top: 100px;
     grid-area: image-style;
     align-self: center;
     margin-left: 13%;
@@ -162,7 +163,6 @@
     color: white;
     margin: 18px;
     grid-row-start: 1;
-    padding-top: 185px;
   }
 
   .button {
@@ -172,6 +172,8 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    margin: 20px;
+    margin-left: 63px;
   }
   .button:hover {
     background-color: rgba(0, 136, 169, 0.8);
