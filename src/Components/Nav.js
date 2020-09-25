@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import MainWrapper from './MainWrapper';
 
 const Nav = () => {
+  const [openNav, setOpenNav] = useState(false);
+  const handleCss = () => setOpenNav(!openNav);
   return (
-    <div className="nav">
-      <h1 className="name"> Sista Ramachandra Murthy</h1>
-      <ul className="linkStyle">
+    <nav>
+      <div className="name">
+        <h4> Sista Ramachandra Murthy</h4>
+      </div>
+      <ul className={!openNav ? 'nav-links' : 'nav-active'}>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -18,10 +22,15 @@ const Nav = () => {
           <Link to="/videos">Videos</Link>
         </li>
         <li>
-          <button className="button"> Contact</button>
+          <Link to="/contact"> Contact</Link>
         </li>
       </ul>
-    </div>
+      <div onClick={handleCss} className="burger">
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
+    </nav>
   );
 };
 
