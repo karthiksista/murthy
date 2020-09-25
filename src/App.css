@@ -242,11 +242,6 @@ nav {
 .text-content {
   background: #24252a;
   color: snow;
-
-  /* grid-area: text-content;
-  color: white;
-  align-self: center;
-  margin: 100px; */
 }
 
 .navLinks {
