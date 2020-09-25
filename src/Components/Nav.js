@@ -5,7 +5,12 @@ import MainWrapper from './MainWrapper';
 
 const Nav = () => {
   const [openNav, setOpenNav] = useState(false);
-  const handleCss = () => setOpenNav(!openNav);
+  const handleCss = () => {
+    window.outerWidth <= 768 ? setOpenNav(!openNav) : setOpenNav(false);
+  };
+  const closeCss = () => {
+    window.outerWidth <= 768 ? setOpenNav(!openNav) : setOpenNav(false);
+  };
   return (
     <nav>
       <div className="name">
@@ -13,16 +18,24 @@ const Nav = () => {
       </div>
       <ul className={!openNav ? 'nav-links' : 'nav-active'}>
         <li>
-          <Link to="/">Home</Link>
+          <Link onClick={closeCss} to="/">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link onClick={closeCss} to="/about">
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/videos">Videos</Link>
+          <Link onClick={closeCss} to="/videos">
+            Videos
+          </Link>
         </li>
         <li>
-          <Link to="/contact"> Contact</Link>
+          <Link onClick={closeCss} to="/contact">
+            Contact
+          </Link>
         </li>
       </ul>
       <div onClick={handleCss} className="burger">
