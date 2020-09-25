@@ -13,6 +13,8 @@ export default function App() {
         <Nav />
         <Switch>
           <Route path="/" exact component={About} />
+          <Route path="/about" exact component={About} />
+          <Route path="/contact" exact component={About} />
           <Route path="/videos" component={VideosPage} />
         </Switch>
       </div>
