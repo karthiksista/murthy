@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <nav>
       <div className="name">
-        <h4> Sista Ramachandra Murthy</h4>
+        <h5 className="title"> Sista Ramachandra Murthy</h5>
       </div>
       <ul className={!openNav ? 'nav-links' : 'nav-active'}>
         <li>
