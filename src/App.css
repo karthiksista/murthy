@@ -100,20 +100,20 @@ nav {
     margin: 0 15px;
     font-size: 4em;
   }
-  .chowzb:hover:enabled,
-  .chowzb:focus:enabled {
+  button.chowzb:hover:enabled,
+  button.chowzb:focus:enabled {
     color: #fff;
     background-color: #b8b8b8 !important;
     box-shadow: 0 0 2px 0 #333 !important;
   }
 
-  .chowzb {
+  button.chowzb {
     color: #fff;
     background-color: #d8d8f5 !important;
     box-shadow: 0 0 2px 0 #333 !important;
   }
 
-  .brcpxa {
+  button.brcpxa {
     -webkit-transition: all 250ms ease;
     transition: all 250ms ease;
     border: none;
@@ -127,14 +127,14 @@ nav {
     border-radius: 50%;
     outline: none;
   }
-  .brcpxa:hover {
+  button.brcpxa:hover {
     cursor: pointer;
     box-shadow: 0 0 1px 3px snow !important;
   }
-  .ikyGAt:hover {
+  button.ikyGAt:hover {
     color: snow !important;
   }
-  .kRlYRh {
+  button.kRlYRh {
     display: none !important;
   }
   .text-content {
@@ -202,20 +202,20 @@ nav {
   margin: 0 15px;
   font-size: 4em;
 }
-.chowzb:hover:enabled,
-.chowzb:focus:enabled {
+button.chowzb:hover:enabled,
+button.chowzb:focus:enabled {
   color: #fff;
   background-color: #b8b8b8 !important;
   box-shadow: 0 0 2px 0 #333 !important;
 }
 
-.chowzb {
+button.chowzb {
   color: #fff;
   background-color: #d8d8f5 !important;
   box-shadow: 0 0 2px 0 #333 !important;
 }
 
-.brcpxa {
+button.brcpxa {
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
   border: none;
@@ -229,14 +229,14 @@ nav {
   border-radius: 50%;
   outline: none;
 }
-.brcpxa:hover {
+button.brcpxa:hover {
   cursor: pointer;
   box-shadow: 0 0 1px 3px snow !important;
 }
-.ikyGAt:hover {
+button.ikyGAt:hover {
   color: snow !important;
 }
-.kRlYRh {
+button.kRlYRh {
   display: none !important;
 }
 .text-content {
