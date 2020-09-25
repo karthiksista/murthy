@@ -11,6 +11,7 @@ const Nav = () => {
   const closeCss = () => {
     window.outerWidth <= 768 ? setOpenNav(!openNav) : setOpenNav(false);
   };
+
   return (
     <nav>
       <div className="name">
